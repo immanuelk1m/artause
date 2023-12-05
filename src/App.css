@@ -36,3 +36,68 @@
     transform: rotate(360deg);
   }
 }
+
+
+.brand-color {
+  background-color: #FFA500;
+}
+.button-purple {
+  background-color: #FFA500;
+  color: white;
+}
+.button-purple:hover {
+  background-color: darken(#FFA500, 10%);
+}
+
+@font-face {
+  font-family: 'SCDream5';
+  src: url('fonts/SCDream5.otf') format('opentype');
+}
+
+body, div {
+  font-family: 'SCDream5', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+.wrap {
+  border: 1px solid;
+  display: flex; 
+  overflow: hidden;
+}
+.wrap .rolling-list ul {
+  padding: 0px;
+  display: flex;
+}
+.wrap .rolling-list ul li { 
+  box-sizing: border-box; 
+  display: flex; 
+  align-items: center; 
+  flex-shrink: 0; 
+}
+
+.rolling-list.original {
+  animation: rollingleft1 40s linear infinite;
+}
+.rolling-list.clone {
+  animation: rollingleft2 40s linear infinite;
+}
+
+@keyframes rollingleft1 {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-100%); }
+  50.01% { transform: translateX(100%); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes rollingleft2 {
+  0% { transition: translateX(0); }
+  100% { transform: translateX(-200%); }
+}
+

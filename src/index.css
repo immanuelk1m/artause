@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.image-option {
+  opacity: 0.5; /* Semi-transparent */
+  cursor: pointer;
+}
+
+.image-option.selected {
+  opacity: 1; /* Fully opaque */
+}
