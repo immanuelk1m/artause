@@ -58,14 +58,6 @@ body, div {
   font-family: 'SCDream5', sans-serif;
 }
 
-
-
-
-
-
-
-
-
 .wrap {
   border: 1px solid;
   display: flex; 
@@ -88,6 +80,24 @@ body, div {
 .rolling-list.clone {
   animation: rollingleft2 40s linear infinite;
 }
+
+.image-wrap img {
+  max-width: 280px; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove extra space below image */
+}
+
+.wrap {
+  height: 300px; /* or any other fixed height */
+  overflow: hidden; /* to hide parts of the image that overflow */
+}
+
+.image-wrap {
+  height: 100%;
+}
+
+
+
 
 @keyframes rollingleft1 {
   0% { transform: translateX(0); }
