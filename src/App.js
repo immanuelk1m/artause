@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'; // Import Link
 import { useEffect } from "react";
 import logoImage from './images/gonbal.png';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './Header'; // Footer 컴포넌트를 불러옴
+import Footer from './Footer'; // Footer 컴포넌트를 불러옴
 import 'slick-carousel/slick/slick.css'; 
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -22,13 +23,7 @@ function App() {
 
     return (
         <div>
-            <header className="brand-color text-white py-2">
-                <div className="container d-flex justify-content-between align-items-center">
-                    <div className="d-flex align-items-center">
-                        <span className="font-weight-bold h5 mb-0">Artause</span>
-                    </div>
-                </div>
-            </header>
+            <Header />
 
             <main className="container mx-auto my-10 p-4">
                 <section className="text-center mb-10">
@@ -54,7 +49,9 @@ function App() {
                 </ul>
             </div>
         </div>
+        <Footer />
         </div>
+        
     );
 }
 

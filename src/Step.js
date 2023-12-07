@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './Step.css';
+import Header from './Header'; // Footer 컴포넌트를 불러옴
+import Footer from './Footer'; // Footer 컴포넌트를 불러옴
 
 const ProgressBar = ({ steps, currentStep }) => {
   return (
@@ -29,19 +31,6 @@ const ProgressBar = ({ steps, currentStep }) => {
     </div>
   );
 };
-
-
-
-
-const ImageOption = ({ src, isSelected, onClick }) => {
-  return (
-    <div className={`image-option p-2 ${isSelected ? 'ring-2 ring-blue-500' : ''}`} onClick={onClick}>
-      <img src={src} alt="Option" className="rounded-lg shadow" />
-    </div>
-  );
-};
-
-
 
 
 const OptionButton = ({ label, isSelected, onClick }) => {
@@ -113,15 +102,8 @@ const SurveyPage = () => {
   };
 
   return (
-    <div className="bg-gray-100 min-h-screen">
-      <header className="bg-orange-500 py-2">
-        <div className="container mx-auto flex justify-between items-center">
-          <div className="flex items-center">
-            <span className="font-bold text-lg text-white">Artause</span>
-          </div>
-        </div>
-      </header>
-          
+      <div>
+      <Header/>
       <div className="container mx-auto mt-5">
         <ProgressBar steps={steps} currentStep={currentPage - 1} />
         <div className="row justify-content-center">
@@ -154,26 +136,11 @@ const SurveyPage = () => {
                 )}
                 
                 {currentPage === 3 && (
-                  <div className="container">
-                    <div className="md:grid md:grid-cols-3 md:gap-3">
-                      {images.map((src, index) => (
-                        <div className="col-span-1 mb-3" key={index}>
-                          <ImageOption
-                            src={src}
-                            isSelected={selectedImages.includes(index)}
-                            onClick={() => handleOptionClick(index)}
-                          />
-                        </div>
-                      ))}
-                    </div>
-                    <div className="md:grid md:grid-cols-3 md:gap-3">
-                      {images.map((src, index) => (
-                        <div className="col-span-1 mb-3" key={index}>
-                          <ImageOption
-                            src={src}
-                            isSelected={selectedImages.includes(index)}
-                            onClick={() => handleOptionClick(index)}
-                          />
+                  <div className="container mx-auto px-4">
+                    <div className="grid grid-cols-3 gap-4">
+                      {images.map((image, index) => (
+                        <div key={index} className="col-span-1">
+                          <img src={image} alt={`Poster ${index + 1}`} className="w-full h-auto rounded-lg shadow-lg max-width-300" />
                         </div>
                       ))}
                     </div>
@@ -193,6 +160,7 @@ const SurveyPage = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

@@ -1,0 +1,9 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.social-icon {
+    height: 40px; /* adjust this value as needed */
+    width: auto; /* maintain aspect ratio */
+  }
+  
