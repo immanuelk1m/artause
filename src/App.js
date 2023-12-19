@@ -33,7 +33,7 @@ function App() {
                     <p className="mb-6">국내 여러 지역의 공연 추천 AI </p>
                     <p className="mb-8">우리 지역 근처의 값 싼 공연을 추천해드려요.</p>
                     <Link to="/step" className="btn button-purple my-2">시작하기</Link> {/* Link to Step.js */}
-                    <button className="btn btn-outline-secondary my-2">더 알아보기</button>
+                    <button className="btn btn-outline-secondary my-2">구독 하기</button>
                 </section>
             </main>
             <div className="wrap">

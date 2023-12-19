@@ -23,10 +23,6 @@ function Footer() {
                 rel="noopener noreferrer"
                 className="mr-2 no-underline hover:underline"
               >
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/900px-Instagram_logo_2022.svg.png"
-                  className="social-icon"
-                />
               </a>
               <a
                 href="https://blog.naver.com/artause"
@@ -34,10 +30,7 @@ function Footer() {
                 rel="noopener noreferrer"
                 className="no-underline hover:underline"
               >
-                <img
-                  src="//i.namu.wiki/i/LPDV3Tr6Etgm3OD7lTTUe-FioxFzIQgztT-3tcDIVZusiWA4E4s5k8ZOBjp-NI0LXV_Fac5VJcFp663qOy-rEjJZ64AmNgWZpa3-M6R4Pc4i8MYhv2yJ5gXkocGVR0TcZXAI1lh8t82hHQbKozaAXw.svg"
-                  className="social-icon"
-                />
+                
               </a>
             </div>
           </div>
