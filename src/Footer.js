@@ -11,7 +11,6 @@ function Footer() {
             <p className="font-bold">Artist deserves applause!</p>
             <br></br>
             <p>알터즈 대표: 김광현</p>
-            <p>TEL : 010-7917-6936</p>
             <p>E-mail : artause23@gmail.com</p>
           </div>
           
