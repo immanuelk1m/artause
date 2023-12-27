@@ -7,14 +7,14 @@ export default function StepperControl({ handleClick, currentStep, steps }) {
           currentStep === 1 ? " cursor-not-allowed opacity-50 " : ""
         }`}
       >
-        Back
+        이전
       </button>
 
       <button
         onClick={() => handleClick("next")}
         className="cursor-pointer rounded-lg bg-green-500 py-2 px-4 font-semibold uppercase text-white transition duration-200 ease-in-out hover:bg-slate-700 hover:text-white"
       >
-        {currentStep === steps.length - 1 ? "Confirm" : "Next"}
+        {currentStep === steps.length - 1 ? "공연 확인!" : "다음"}
       </button>
     </div>
   );
