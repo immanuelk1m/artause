@@ -75,10 +75,10 @@ body, div {
 }
 
 .rolling-list.original {
-  animation: rollingleft1 40s linear infinite;
+  animation: rollingleft1 180s linear infinite;
 }
 .rolling-list.clone {
-  animation: rollingleft2 40s linear infinite;
+  animation: rollingleft2 180s linear infinite;
 }
 
 .image-wrap img {

@@ -5,8 +5,8 @@ import logoImage from './images/gonbal.png';
 import './App.css';
 import Header from './Header'; // Footer 컴포넌트를 불러옴
 import Footer from './Footer'; // Footer 컴포넌트를 불러옴
-import 'slick-carousel/slick/slick.css'; 
-import 'slick-carousel/slick/slick-theme.css';
+// import 'slick-carousel/slick/slick.css'; 
+// import 'slick-carousel/slick/slick-theme.css';
 
 function App() {
     useEffect(() => {
@@ -32,8 +32,7 @@ function App() {
 
                     <p className="mb-6">국내 여러 지역의 공연 추천 AI </p>
                     <p className="mb-8">우리 지역 근처의 값 싼 공연을 추천해드려요.</p>
-                    <Link to="/step" className="btn button-purple my-2">시작하기</Link> {/* Link to Step.js */}
-                    <button className="btn btn-outline-secondary my-2">구독 하기</button>
+                    <Link to="/step" className="text-white bg-[#FF9119] hover:bg-[#FF9119]/80 focus:ring-4 focus:outline-none focus:ring-[#FF9119]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:hover:bg-[#FF9119]/80 dark:focus:ring-[#FF9119]/40 me-2 mb-2">시작하기</Link> {/* Link to Step.js */}
                 </section>
             </main>
             <div className="wrap">
@@ -42,7 +41,7 @@ function App() {
                     {imageNumbers.map(num => (
                         <li key={num}>
                             <div className="image-wrap">
-                                <img src={`posters/${num}.jpg`} alt={`Slide ${num}`} height='300px'/>
+                                <img src={`posters/${num}.jpg`} alt={`Slide ${num}`}  width='240px'/>
                             </div>
                         </li>
                     ))}
