@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'; // Import Link
 import { useEffect } from "react";
 import logoImage from './images/gonbal.png';
 import './App.css';
-import Header from './Header'; // Footer 컴포넌트를 불러옴
+import Header from './Header'; // Header 컴포넌트를 불러옴
 import Footer from './Footer'; // Footer 컴포넌트를 불러옴
 // import 'slick-carousel/slick/slick.css'; 
 // import 'slick-carousel/slick/slick-theme.css';
@@ -30,10 +30,28 @@ function App() {
                     <section className="text-center mb-10">
                         <h1 className="text-3xl font-bold mb-4">다양한 예술 시장 활성화를 위한 플랫폼, 알터즈!</h1>
                         <img src={logoImage} alt="" width="320" height="120" style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto' }} />
-
+                    </section>
+                    <section className="text-center mb-10">
                         <p className="mb-6">국내 여러 지역의 공연 추천 AI </p>
                         <p className="mb-8">우리 지역 근처의 값 싼 공연을 추천해드려요.</p>
-                        <Link to="/step" className="text-white bg-[#FF9119] hover:bg-[#FF9119]/80 focus:ring-4 focus:outline-none focus:ring-[#FF9119]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:hover:bg-[#FF9119]/80 dark:focus:ring-[#FF9119]/40 me-2 mb-2">시작하기</Link> {/* Link to Step.js */}
+                        
+                        <div className="relative">
+                            <Link to="/step"
+                                className="relative z-10 inline-flex items-center justify-center w-full px-10 py-3 text-lg font-bold text-white transition-all duration-200 border-2 border-transparent sm:w-auto rounded-xl font-pj hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 no-underline"
+                                role="button"
+                                style={{ backgroundColor: '#FFA500' }}>
+                                공연 추천 시작하기!
+                            </Link>
+                        </div>
+                        <br />
+                        <div className="relative">
+                            <Link to="/subscribe"  // Update this path as per your routing setup
+                                className="relative z-10 inline-flex items-center justify-center w-full px-8 py-3 text-lg font-bold text-white transition-all duration-200 bg-gray-900 border-2 border-transparent sm:w-auto rounded-xl font-pj hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 no-underline"
+                                role="button">
+                                매월 새로운 공연 구독하기!
+                            </Link>
+                        </div>
+
                     </section>
                 </main>
                 <div className="wrap">

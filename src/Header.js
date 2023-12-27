@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom'; // Import Link
 import './Header.css';
 
 function Header() {
@@ -10,13 +10,12 @@ function Header() {
                     <a className="font-weight-bold h2 mb-0" href="https://artause.com">Artause</a>
                 </div>
                 <div className="menu-items">
-                    <a href="/blog" className="text-white px-2">Blog</a>
-                    <a href="https://www.instagram.com/yourusername" className="text-white px-2">Instagram</a>
-                    <a href="/aboutus" className="text-white px-2">About Us</a>
+                    <Link to="/blog" className="text-white px-2">Blog</Link> {/* Use Link */}
+                    <a href="https://www.instagram.com/artause_official/" className="text-white px-2">Instagram</a>
+                    <Link to="/aboutus" className="text-white px-2">About Us</Link> {/* Use Link */}
                 </div>
             </div>
         </header>
-
     );
 }
 
