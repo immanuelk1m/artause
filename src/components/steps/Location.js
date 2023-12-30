@@ -1,60 +1,24 @@
+import React, { useEffect} from 'react';
 import { useStepperContext } from "../../contexts/StepperContext";
+import { selectBOX } from "../../components/steps/selectBOX";
+ 
 
 export default function Location() {
   const { userData, setUserData } = useStepperContext();
+  
+  useEffect(() => { 
+    selectBOX();  // 시/도/군/구 selectBOX 생성함수를 컴포넌트가 로드 되자마자 실행해준다.
 
-  const handleCheckboxChange = (e) => {
-    const { name, checked } = e.target;
-    setUserData({ ...userData, [name]: checked });
-  };
-
-  const regions = ['경기도', '강원도', '전라도', '경상북도', '경상남도', '충청북도', '충청남도', '제주도'];
+  }, []);
+  
 
   return (
-    <div className="flex flex-col">
-      {/* Split the regions into rows */}
-      <div className="flex flex-row justify-between">
-        {regions.slice(0, 4).map((region) => (
-          <div key={region} className="relative flex m-2 w-1/4">
-            <input
-              type="checkbox"
-              id={region}
-              name={region}
-              checked={userData[region] || false}
-              onChange={handleCheckboxChange}
-              style = {{display:'none'}}
-              className="absolute top-[calc(50%-theme(spacing.2))] peer w-4 h-4 left-6 accent-[#FF6414] rounded-full"
-            />
-            <label
-              htmlFor={region}
-              className="p-2 font-bold transition-colors duration-200 ease-in-out border-2 rounded select-none pl-8 peer-checked:text-[#FF6414] peer-checked:border-[#FF6414] text-xs uppercase leading-8 text-gray-500"
-            >
-              {region}
-            </label>
-          </div>
-        ))}
-      </div>
-      <div className="flex flex-row justify-between">
-        {regions.slice(4, 8).map((region) => (
-          <div key={region} className="relative flex m-2 w-1/4">
-            <input
-              type="checkbox"
-              id={region}
-              name={region}
-              checked={userData[region] || false}
-              onChange={handleCheckboxChange}
-              style = {{display:'none'}}
-              className="absolute top-[calc(50%-theme(spacing.2))] peer w-4 h-4 left-6 accent-[#FF6414] rounded-full"
-            />
-            <label
-              htmlFor={region}
-              className="p-2 font-bold transition-colors duration-200 ease-in-out border-2 rounded select-none pl-8 peer-checked:text-[#FF6414] peer-checked:border-[#FF6414] text-xs uppercase leading-8 text-gray-500"
-            >
-              {region}
-            </label>
-          </div>
-        ))}
+    <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <div className="flex w-72">
+        <select name="sido1" id="sido1" className="block py-3.5 px-5 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer"></select>
+        <select name="gugun1" id="gugun1" className="block py-3.5 px-0 w-full text-sm text-gray-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer"></select>
       </div>
     </div>
+
   );
 }

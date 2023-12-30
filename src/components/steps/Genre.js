@@ -17,7 +17,7 @@ export default function Genre() {
   ];
 
   return (
-    <div className="grid grid-cols-4 md:grid-cols-4 gap-4">
+    <div className="grid grid-cols-4 md:grid-cols-4 gap-4 justify-center items-center">
       {characteristics.map((characteristic) => (
         <div key={characteristic} className="relative flex m-2">
           <input
@@ -31,7 +31,7 @@ export default function Genre() {
           />
           <label
             htmlFor={characteristic}
-            className="p-2 font-bold transition-colors duration-200 ease-in-out border-2 rounded select-none pl-8 peer-checked:text-[#FF6414] peer-checked:border-[#FF6414] text-xs text-gray-500"
+            className="p-3 font-bold transition-colors duration-200 ease-in-out border-2 rounded select-none pl-8 peer-checked:text-[#FF6414] peer-checked:border-[#FF6414] text-xs text-gray-500"
           >
             {characteristic}
           </label>
