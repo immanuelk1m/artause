@@ -1,5 +1,6 @@
 import Header from './Header'; // Header 컴포넌트를 불러옴
 import Footer from './Footer'; // Footer 컴포넌트를 불러옴
+import { Link } from 'react-router-dom';
 
 export default function Result() {
     return (
@@ -9,13 +10,15 @@ export default function Result() {
         <h1 className="p-12">A.I 추천 공연!</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-4">
         <div className="flex flex-col items-start space-y-4 p-4 rounded-lg">
-          <img
-            alt="Performance Poster"
-            className="aspect-[3/4] object-cover rounded-lg"
-            height={500}
-            src="./posters/7.jpg"
-            width={400}
-          />
+          <Link to="/book">
+            <img
+              alt="Performance Poster"
+              className="aspect-[3/4] object-cover rounded-lg"
+              height={500}
+              src="./posters/7.jpg"
+              width={400}
+            />
+            </Link>
           <h2 className="text-2xl font-bold">ㅉㅅㅉㅅ 하고 싶은 말이 뭐야?</h2>
           <p className="text-gray-800 dark:text-gray-400">
             서울 시립 공연장
@@ -25,13 +28,15 @@ export default function Result() {
           </p>
         </div>
         <div className="flex flex-col items-start space-y-4 p-4 rounded-lg">
-          <img
-            alt="Performance Poster"
-            className="aspect-[3/4] object-cover rounded-lg"
-            height={500}
-            src="./posters/8.jpg"
-            width={400}
-          />
+          <Link to="/book">
+            <img
+              alt="Performance Poster"
+              className="aspect-[3/4] object-cover rounded-lg"
+              height={500}
+              src="./posters/8.jpg"
+              width={400}
+            />
+          </Link>
           <h2 className="text-2xl font-bold">수녀가 아이를 죽이다</h2>
           <p className="text-gray-800 dark:text-gray-400">
             서울 시립 공연장
@@ -41,6 +46,7 @@ export default function Result() {
           </p>
         </div>
         <div className="flex flex-col items-start space-y-4 p-4 rounded-lg">
+          <Link to="/book">
           <img
             alt="Performance Poster"
             className="aspect-[3/4] object-cover rounded-lg"
@@ -48,6 +54,7 @@ export default function Result() {
             src="./posters/9.jpg"
             width={400}
           />
+          </Link>
           <h2 className="text-2xl font-bold">Musical 소믈리에</h2>
           <p className="text-gray-800 dark:text-gray-400">
             서울 시립 공연장
@@ -65,6 +72,7 @@ export default function Result() {
         <h1 className="p-12">지역 공연 추천</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-4">
         <div className="flex flex-col items-start space-y-4 p-4 rounded-lg">
+          <Link to="/book">
           <img
             alt="Performance Poster"
             className="aspect-[3/4] object-cover rounded-lg"
@@ -72,6 +80,7 @@ export default function Result() {
             src="./posters/7.jpg"
             width={400}
           />
+          </Link>
           <h2 className="text-2xl font-bold">Performance 1</h2>
           <p className="text-gray-800 dark:text-gray-400">
             서울 시립 공연장
@@ -81,6 +90,7 @@ export default function Result() {
           </p>
         </div>
         <div className="flex flex-col items-start space-y-4 p-4 rounded-lg">
+          <Link to="/book">
           <img
             alt="Performance Poster"
             className="aspect-[3/4] object-cover rounded-lg"
@@ -88,6 +98,7 @@ export default function Result() {
             src="./posters/8.jpg"
             width={400}
           />
+          </Link>
           <h2 className="text-2xl font-bold">Performance 2</h2>
           <p className="text-gray-800 dark:text-gray-400">
             서울 시립 공연장
@@ -97,6 +108,7 @@ export default function Result() {
           </p>
         </div>
         <div className="flex flex-col items-start space-y-4 p-4 rounded-lg">
+        <Link to="/book">
           <img
               alt="Performance Poster"
               className="aspect-[3/4] object-cover rounded-lg"
@@ -104,6 +116,7 @@ export default function Result() {
               src="./posters/9.jpg"
               width={400}
           />
+          </Link>
           <h2 className="text-2xl font-bold">Performance 3</h2>
           <p className="text-gray-800 dark:text-gray-400">
             서울 시립 공연장

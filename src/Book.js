@@ -27,17 +27,25 @@ export default function Component() {
               </div>
               <div className="grid gap-1">
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Duration: 2 hours 30 minutes (with intermission)
+                  러닝 타임 : 7:00 PM - 9:30 PM | 2시간 30분
                 </p>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Theater Location: Majestic Theatre, 245 West 44th Street, New York
+                  공연 위치 : 서울 시립 공연장
                 </p>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Cast: John Doe, Jane Doe, Richard Roe, Jane Roe
+                  출연진 : 김민수 이철수 박민지
                 </p>
-                <p className="text-sm text-gray-500 dark:text-gray-400">Running Time: 7:00 PM - 9:30 PM</p>
-                <p className="text-sm text-gray-500 dark:text-gray-400">Age Availability: Suitable for ages 8 and up</p>
-                <p className="text-sm text-gray-500 dark:text-gray-400">Price: $50 - $150</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                    관람 연령 : 만 7세 이상
+                </p>
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                    가격 : 전석 20,000원	
+                </p>
+
+                <Link to="#" className="inline-block px-6 py-2.5 bg-gray-700 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-gray-800 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out text-center">
+                    예매하기
+                </Link>
+
               </div>
             </div>
             
