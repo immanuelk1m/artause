@@ -1,7 +1,7 @@
 import Header from './Header'; // Header 컴포넌트를 불러옴
 import Footer from './Footer'; // Footer 컴포넌트를 불러옴
 
-export default function Component() {
+export default function Result() {
     return (
       <>
       <Header></Header>
