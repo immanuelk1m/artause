@@ -6,97 +6,113 @@ export default function Result() {
       <>
       <Header></Header>
       <div>
-        <h1 className="p-4">A.I 추천 공연!</h1>
+        <h1 className="p-12">A.I 추천 공연!</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-4">
-        <div className="flex flex-col items-center space-y-4 p-4 border rounded-lg">
+        <div className="flex flex-col items-start space-y-4 p-4 rounded-lg">
           <img
             alt="Performance Poster"
             className="aspect-[3/4] object-cover rounded-lg"
-            height={400}
+            height={500}
             src="./posters/7.jpg"
-            width={300}
+            width={400}
           />
-          <h2 className="text-2xl font-bold">Performance 1</h2>
-          <p className="text-gray-500 dark:text-gray-400">
-            A brief introduction to the performance. The performance is about...
+          <h2 className="text-2xl font-bold">ㅉㅅㅉㅅ 하고 싶은 말이 뭐야?</h2>
+          <p className="text-gray-800 dark:text-gray-400">
+            서울 시립 공연장
           </p>
-          <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">예매하기</button>
+          <p className="text-gray-400 dark:text-gray-400">
+            2023.12.21 ~ 2023.12.22
+          </p>
         </div>
-        <div className="flex flex-col items-center space-y-4 p-4 border rounded-lg">
+        <div className="flex flex-col items-start space-y-4 p-4 rounded-lg">
           <img
             alt="Performance Poster"
             className="aspect-[3/4] object-cover rounded-lg"
-            height={400}
+            height={500}
             src="./posters/8.jpg"
-            width={300}
+            width={400}
           />
-          <h2 className="text-2xl font-bold">Performance 2</h2>
-          <p className="text-gray-500 dark:text-gray-400">
-            A brief introduction to the performance. The performance is about...
+          <h2 className="text-2xl font-bold">수녀가 아이를 죽이다</h2>
+          <p className="text-gray-800 dark:text-gray-400">
+            서울 시립 공연장
           </p>
-          <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">예매하기</button>
+          <p className="text-gray-400 dark:text-gray-400">
+            2023.12.21 ~ 2023.12.22
+          </p>
         </div>
-        <div className="flex flex-col items-center space-y-4 p-4 border rounded-lg">
+        <div className="flex flex-col items-start space-y-4 p-4 rounded-lg">
           <img
             alt="Performance Poster"
             className="aspect-[3/4] object-cover rounded-lg"
-            height={400}
+            height={500}
             src="./posters/9.jpg"
-            width={300}
+            width={400}
           />
-          <h2 className="text-2xl font-bold">Performance 3</h2>
-          <p className="text-gray-500 dark:text-gray-400">
-            A brief introduction to the performance. The performance is about...
+          <h2 className="text-2xl font-bold">Musical 소믈리에</h2>
+          <p className="text-gray-800 dark:text-gray-400">
+            서울 시립 공연장
           </p>
-          <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">예매하기</button>
+          <p className="text-gray-400 dark:text-gray-400">
+            2023.12.21 ~ 2023.12.22
+          </p>
         </div>
       </div>
     </div>
+    <hr class="h-px my-8 bg-gray-800 border-3 dark:bg-gray-600 w-[80%] mx-auto"></hr>
+
+
     <div>
-        <h1 className="p-4">지역 공연 추천</h1>
+        <h1 className="p-12">지역 공연 추천</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-4">
-        <div className="flex flex-col items-center space-y-4 p-4 border rounded-lg">
+        <div className="flex flex-col items-start space-y-4 p-4 rounded-lg">
           <img
             alt="Performance Poster"
             className="aspect-[3/4] object-cover rounded-lg"
-            height={400}
+            height={500}
             src="./posters/7.jpg"
-            width={300}
+            width={400}
           />
           <h2 className="text-2xl font-bold">Performance 1</h2>
-          <p className="text-gray-500 dark:text-gray-400">
-            A brief introduction to the performance. The performance is about...
+          <p className="text-gray-800 dark:text-gray-400">
+            서울 시립 공연장
           </p>
-          <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">예매하기</button>
+          <p className="text-gray-400 dark:text-gray-400">
+            2023.12.21 ~ 2023.12.22
+          </p>
         </div>
-        <div className="flex flex-col items-center space-y-4 p-4 border rounded-lg">
+        <div className="flex flex-col items-start space-y-4 p-4 rounded-lg">
           <img
             alt="Performance Poster"
             className="aspect-[3/4] object-cover rounded-lg"
-            height={400}
+            height={500}
             src="./posters/8.jpg"
-            width={300}
+            width={400}
           />
           <h2 className="text-2xl font-bold">Performance 2</h2>
-          <p className="text-gray-500 dark:text-gray-400">
-            A brief introduction to the performance. The performance is about...
+          <p className="text-gray-800 dark:text-gray-400">
+            서울 시립 공연장
           </p>
-          <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">예매하기</button>
+          <p className="text-gray-400 dark:text-gray-400">
+            2023.12.21 ~ 2023.12.22
+          </p>
         </div>
-        <div className="flex flex-col items-center space-y-4 p-4 border rounded-lg">
+        <div className="flex flex-col items-start space-y-4 p-4 rounded-lg">
           <img
-            alt="Performance Poster"
-            className="aspect-[3/4] object-cover rounded-lg"
-            height={400}
-            src="./posters/9.jpg"
-            width={300}
+              alt="Performance Poster"
+              className="aspect-[3/4] object-cover rounded-lg"
+              height={500}
+              src="./posters/9.jpg"
+              width={400}
           />
           <h2 className="text-2xl font-bold">Performance 3</h2>
-          <p className="text-gray-500 dark:text-gray-400">
-            A brief introduction to the performance. The performance is about...
+          <p className="text-gray-800 dark:text-gray-400">
+            서울 시립 공연장
           </p>
-          <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">예매하기</button>
-        </div>
+          <p className="text-gray-400 dark:text-gray-400">
+            2023.12.21 ~ 2023.12.22
+          </p>
+      </div>
+
       </div>
     </div>
     

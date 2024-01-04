@@ -6,6 +6,7 @@ import Step from './Step';
 import Aboutus from './Aboutus';
 import Subscribe from './Subscribe';
 import Result from './Result';
+import Book from './Book';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -21,6 +22,7 @@ root.render(
       <Route path="/aboutus" element={<Aboutus />} />
       <Route path="/subscribe" element={<Subscribe />} />
       <Route path="/result" element={<Result />} />
+      <Route path="/book" element={<Book />} />
       {/* 여기에 다른 라우트를 정의하세요 */}
     </Routes>
   </Router>
