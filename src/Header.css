@@ -1,3 +1,11 @@
 .font-weight-bold.h2.mb-0 {
     text-decoration: none; /* 밑줄 제거 */
 }
+
+.menu-items a {
+    text-decoration: none;
+}
+
+.menu-items a:hover {
+    text-decoration: underline; /* 마우스 오버 시 밑줄을 추가하고 싶다면 이 줄을 사용 */
+}
