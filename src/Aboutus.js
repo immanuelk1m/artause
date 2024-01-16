@@ -18,13 +18,10 @@ export default function Component() {
             </div>
             <div className="mx-auto grid items-start gap-8 sm:max-w-4xl sm:grid md:gap-12 lg:max-w-5xl">
               
-                <img
-                  
-                  src={`aboutus/mydog.jpg`}
-                  
-                  className="w-full h-auto"
-                />
-              
+            <div>
+              <img src="posters/../a.jpg"/>
+           </div>
+
             </div>
           </div>
         </section>
