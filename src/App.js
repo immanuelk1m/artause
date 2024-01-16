@@ -64,7 +64,7 @@ function App() {
                                 </div>
                             </li>
                         ))}
-                    </ul>
+                </ul>
                 </div>
             </div>
             <Footer />
