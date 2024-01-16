@@ -21,16 +21,13 @@ export default function Component() {
               <ul className="mt-4 space-y-2">
                 <li className="flex items-center">
                   <CheckIcon className="text-white text-xs bg-green-500 rounded-full mr-2 p-1" />
-                  추천 공연 메일 서비스 
+                  매주 업데이트 되는 추천 공연 
                 </li>
                 <li className="flex items-center">
                   <CheckIcon className="text-white text-xs bg-green-500 rounded-full mr-2 p-1" />
                   추천 공연 티켓 1매 
                 </li>
-                <li className="flex items-center">
-                  <CheckIcon className="text-white text-xs bg-green-500 rounded-full mr-2 p-1" />
-                  알터즈 대표의 손편지
-                </li>
+
               </ul>
             </div>
             <div className="mt-6">
@@ -49,20 +46,13 @@ export default function Component() {
               <ul className="mt-4 space-y-2">
                 <li className="flex items-center">
                   <CheckIcon className="text-white text-2xs bg-green-500 rounded-full mr-2 p-1" />
-                  추천 공연 메일 서비스
+                  매주 업데이트 되는 추천 공연
                 </li>
                 <li className="flex items-center">
                   <CheckIcon className="text-white text-xs bg-green-500 rounded-full mr-2 p-1" />
                   추천 공연 티켓 3매
                 </li>
-                <li className="flex items-center">
-                  <CheckIcon className="text-white text-xs bg-green-500 rounded-full mr-2 p-1" />
-                  알터즈 대표의 손편지
-                </li>
-                <li className="flex items-center">
-                  <CheckIcon className="text-white text-xs bg-green-500 rounded-full mr-2 p-1" />
-                  미정
-                </li>
+                
               </ul>
             </div>
             <div className="mt-6">
@@ -71,27 +61,20 @@ export default function Component() {
           </div>
           <div className="flex flex-col p-6 bg-white shadow-lg rounded-lg dark:bg-zinc-850 justify-between border border-gray-300">
             <div>
-              <h3 className="text-2xl font-bold text-center">공연 대대장</h3>
+              <h3 className="text-2xl font-bold text-center">공연 광부</h3>
               <div className="mt-4 text-center text-zinc-600 dark:text-zinc-400">
                 <span className="text-2xl font-bold">8,900원</span>/ month
               </div>
               <ul className="mt-4 space-y-2">
                 <li className="flex items-center">
                   <CheckIcon className="text-white text-xs bg-green-500 rounded-full mr-2 p-1" />
-                  추천 공연 메일 서비스
+                  매주 업데이트 되는 추천 공연
                 </li>
                 <li className="flex items-center">
                   <CheckIcon className="text-white text-xs bg-green-500 rounded-full mr-2 p-1" />
                   추천 공연 티켓 7매
                 </li>
-                <li className="flex items-center">
-                  <CheckIcon className="text-white text-xs bg-green-500 rounded-full mr-2 p-1" />
-                  알터즈 대표의 손편지
-                </li>
-                <li className="flex items-center">
-                  <CheckIcon className="text-white text-xs bg-green-500 rounded-full mr-2 p-1" />
-                  미정
-                </li>
+                
                 
               </ul>
             </div>
