@@ -12,7 +12,7 @@ function Header() {
                     <a className="font-weight-bold h2 mb-0" href="https://www.artause.co.kr/">Artause</a>
 =======
                     {/* 이미지를 a 태그로 감싸서 링크를 추가합니다 */}
-                    <a href="https://master.d24ekw5jhar2ge.amplifyapp.com/" style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto' }}>
+                    <a href="https://www.artause.co.kr/" style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto' }}>
                         <img src={logoImage} alt="Artuase Logo" width="200" height="100" />
                     </a>
 >>>>>>> b09281d1c7cebe3ef0a657e9ddbffe818dfccee1
