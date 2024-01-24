@@ -13,12 +13,12 @@ function Header() {
 =======
                     {/* 이미지를 a 태그로 감싸서 링크를 추가합니다 */}
                     <a href="https://www.artause.co.kr/" style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto' }}>
-                        <img src={logoImage} alt="Artuase Logo" width="200" height="100" />
+                        <img src={logoImage} alt="Artuase Logo" width="180" height="100" />
                     </a>
 >>>>>>> b09281d1c7cebe3ef0a657e9ddbffe818dfccee1
                 </div>
                 <div className="menu-items">
-                    <Link to="/blog" className="text-white px-2">Blog</Link>
+                    <a href="https://blog.naver.com/artause" className="text-white px-2">Blog</a>
                     <a href="https://www.instagram.com/artause_official/" className="text-white px-2">Instagram</a>
                     <Link to="/aboutus" className="text-white px-2">About Us</Link>
                 </div>
